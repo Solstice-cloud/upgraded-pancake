@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18'  # Use Node.js version 18 or higher
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
@@ -29,4 +29,4 @@ jobs:
           export GOOGLE_APPLICATION_CREDENTIALS=${HOME}/admin_sdk.json
 
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting
+        run: firebase deploy --only hosting --project <52672873969>
