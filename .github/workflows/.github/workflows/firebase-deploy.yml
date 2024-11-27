@@ -29,4 +29,4 @@ jobs:
           export GOOGLE_APPLICATION_CREDENTIALS=${HOME}/admin_sdk.json
 
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting --project Y52672873969
+        run: firebase deploy --only hosting --project 52672873969  # Use the correct project ID here
