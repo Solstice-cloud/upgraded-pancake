@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14'  # Use the Node.js version required by Firebase CLI
+          node-version: '18'  # Use Node.js version 18
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
